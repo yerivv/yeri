@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<title>GUIDE</title>
+
+	<link rel="stylesheet" href="../static/css/back/common.css" />
+	<link rel="stylesheet" href="../static/css/back/button.css" />
+	<link rel="stylesheet" href="../static/css/back/master.css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+	
+	<script type="text/javascript" src="../static/jscript/global/jquery.browser.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/jquery.cookies.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/jquery.form.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/jquery.laybox.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/jquery.fns.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/jquery.methods.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/prototype.js"></script>
+	<script type="text/javascript" src="../static/jscript/global/common.js"></script>
+	
+	<script type="text/javascript" src="../static/jscript/back/ui.back.js"></script>
+
+	<!-- 달력 -->
+	<script type="text/javascript" src="../static/jscript/global/jquery.datepicker.js"></script>
+	<!-- 기간 -->
+	<script type="text/javascript" src="../static/jscript/global/jquery.dateperioder.js"></script>
+	<!-- 스위치 -->
+	<script type="text/javascript" src="../static/jscript/global/jquery.switcher.js"></script>
+
+	<style type="text/css">
+		#header_guide {text-align:center;width:100%;border-bottom:solid 1px #d5d7e0;background-color:#fff;height:99px;line-height:99px;}
+		.basicguide dl {margin-bottom:10px;}
+		.basicguide .box {border:solid 1px #d5d7e0;background-color:#fff;}
+		.basicguide .box dt {background-color:#fff;border-bottom:solid 1px #d5d7e0;padding:7px 10px 5px}
+		.basicguide .box dd {padding:20px}
+	</style>
+</head>
+<body class="main">
+
+<header id="header_guide">
+	<h1>가이드</h1>
+</header>
+
+<div id="container">
+	<!-- 본문시작 -->
+	<div id="contents" class="basicguide">
+		<dl class="box">
+			<dt><strong>Font</strong></dt>
+			<dd>
+				<span>기본 셋팅 폰트 : 나눔바른고딕; 12px; #111</span>
+			</dd>
+		</dl>
+
+		<dl class="box">
+			<dt><strong>Color</strong></dt>
+			<dd>
+				<div>
+					포인트 컬러(#28aae1) : <span style="display:inline-block;vertical-align:middle;background-color:#28aae1;width:160px;text-align:center;height:20px;color:#fff;line-height:20px;">class="color_point"</span>
+				</div>
+				 <div class="mgt10">
+					컬러(#fc2d1f) : <span style="display:inline-block;vertical-align:middle;background-color:#fc2d1f;width:160px;text-align:center;height:20px;color:#fff;line-height:20px;">class="color_red"</span>
+				</div>
+				<div class="mgt10">
+					컬러(#666) : <span style="display:inline-block;vertical-align:middle;background-color:#666;width:160px;text-align:center;height:20px;color:#fff;line-height:20px;">class="color_g66"</span>
+				</div>
+				<div class="mgt10">
+					컬러(#999) : <span style="display:inline-block;vertical-align:middle;background-color:#999;width:160px;text-align:center;height:20px;color:#fff;line-height:20px;">class="color_g99"</span>
+				</div>
+			</dd>
+		</dl>
+
+		<dl class="box">
+			<dt><strong>Button</strong></dt>
+			<dd>
+				<div>
+					<a href="#" class="button gray">기본버튼</a>
+					<a href="#" class="button">기본버튼</a>
+					<a href="#" class="button borderb">기본버튼</a>
+					<a href="#" class="button borderr">기본버튼</a>
+					<a href="#" class="button blue">기본버튼</a>
+					<a href="#" class="button black">기본버튼</a>
+					<a href="#" class="button red">기본버튼</a>
+				<div>
+				<div class="mgt10">
+					<a href="#" class="button large black">긍정큰버튼</a>
+					<a href="#" class="button large blue">긍정큰버튼</a>
+					<a href="#" class="button large borderb">긍정큰버튼</a>
+					<a href="#" class="button large borderbk">부정큰버튼</a>
+				</div>
+				<div class="mgt10">
+					<a href="#" class="button middle black">엑셀다운로드</a>
+					<a href="#" class="button middle">선택상품삭제</a>
+					<a href="#" class="button middle gray">일시품절해제</a>
+					<a href="#" class="button middle borderb">카테고리복원</a>
+					<a href="#" class="button middle blue">기존카테고리복원</a>
+				</div>
+				<div class="mgt10">
+					<a href="#" class="button middle"><i></i>품목별 상품고시</a>
+				</div>
+			</dd>
+		</dl>
+
+		<dl class="box">
+			<dt><strong>Icon Button</strong></dt>
+			<dd>
+				<input type="text" name="dts" placeholder="0000-00-00" class="ux-datepicker" />
+
+				<div class="mgt10">
+					<a href="#" class="icon_button move"><i class="up">상</i><i class="down">하</i></a>
+				</div>
+				<div class="mgt10">
+					<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+				</div>
+				<div class="mgt10">
+					<a href="#" class="icon_button delete"><i>삭제</i></a>
+				</div>
+			</dd>
+		</dl>
+
+		<!-- 이미지 아이콘으로 갈것인지 재고려 
+		<dl class="box">
+			<dt><strong>Pay Icon</strong></dt>
+			<dd>
+				<div>
+					<span class="iconpay coral">카</span>
+					<span class="iconpay yellow">가</span>
+					<span class="iconpay purple">실</span>
+					<span class="iconpay green">에</span>
+					<span class="iconpay orange">휴</span>
+					<span class="iconpay black">온</span>
+					<span class="iconpay blue">적</span>
+				</div>
+			</dd>
+		</dl //-->
+
+		<dl class="box">
+			<dt><strong>Form</strong></dt>
+			<dd>
+				<div>
+					<input type="text" name="" placeholder="placeholder 텍스트" />
+					<input type="text" name="" placeholder="placeholder 텍스트" value="비활성" disabled="disabled" />
+					<span class="mgl5 color_g99">(너비 auto / 높이 24 / border #d5d5d5)</span>
+				</div>
+				<div class="mgt10">
+					<select name="">
+						<option>셀렉트박스</option>
+					</select>
+					<select name="" disabled="disabled">
+						<option>셀렉트박스 비활성</option>
+					</select>
+					<span class="mgl5 color_g99">(너비 auto / 높이 24 / border #d5d5d5)</span>
+				</div>
+				<div class="mgt10">
+					<input type="radio" name="radio2" id="radio2_1" checked="checked" />
+					<input type="radio" name="radio2" id="radio2_2" />
+					<input type="radio" name="radio2" id="radio2_3" disabled="disabled" />
+
+					<input type="radio" name="radio1" id="radio1_1" checked="checked" /><label for="radio1_1">사용함</label>
+					<input type="radio" name="radio1" id="radio1_2" /><label for="radio1_2">사용안함</label>
+					<input type="radio" name="radio1" id="radio1_3" disabled="disabled" /><label for="radio1_3">사용불가</label>
+					<span class="mgl5 color_g99">(input 뒤에 label이 있는 경우에만 label에 margin값 넣음)</span>
+
+					<label><input type="radio" name="radio1" id="radio1_1" checked="checked">사용함</label>
+					<span class="mgl5 color_g99">(label 안에 input이 있을 경우 input에 margin값 추가)</span>
+				</div>
+				<div class="mgt10">
+					<input type="checkbox" name="checkbox1" id="checkbox1_1" checked="checked" /><label for="checkbox1_1">선택</label>
+					<input type="checkbox" name="checkbox1" id="checkbox1_2" /><label for="checkbox1_2">선택안함</label>
+					<input type="checkbox" name="checkbox1" id="checkbox1_3" disabled="disabled" /><label for="checkbox1_3">선택불가</label>
+					<input type="checkbox" name="checkbox2" id="checkbox2_1" checked="checked" />
+					<input type="checkbox" name="checkbox2" id="checkbox2_2" />
+					<input type="checkbox" name="checkbox2" id="checkbox2_3" disabled="disabled" />
+					<span class="mgl5 color_g99">(input 뒤에 label이 있는 경우에만 label에 margin값 넣음)</span>
+				</div>
+				<div class="mgt10">
+					<input type="checkbox" name="display" class="ux-switcher" swt-on="노출" swt-off="숨김" />
+				</div>
+				<div class="mgt10">
+					<input type="checkbox" name="display" class="ux-switcher" swt-type="wide" swt-on="전시" swt-off="미전시" />
+				</div>
+			</dd>
+		</dl>
+
+	<!-- 
+		<dl class="box">
+			<dt><strong>No image</strong></dt>
+			<dd>
+				<div>
+					<div class="thumb_box icon"><img src="" alt="" /></div> 상품아이콘
+				</div>
+				<div class="mgt10">
+					<div class="thumb_box product"><img src="" alt="" /></div> 상품이미지
+				</div>
+				<div class="mgt10">
+					<div class="thumb_box banner"><img src="" alt="" /></div> 배너리스트
+				</div>
+			</dd>
+		</dl>
+	-->
+
+		<dl class="box">
+			<dt><strong>페이징</strong></dt>
+			<dd>
+				<div class="paging">
+					<a href="#" class="prev">이전페이지</a><strong class="current">1</strong><a href="#">2</a><a href="#" class="next">다음페이지</a>
+				</div>
+			</dd>
+		</dl>
+
+		<dl class="box">
+			<dt><strong>Title</strong></dt>
+			<dd>
+				<!-- div class="title_page">
+					<h3>[페이지 타이틀]</h3>
+				</div //-->
+				<h3 class="title_section">단락 제목
+					<input type="checkbox" name="display" class="ux-switcher" checked="checked" />
+				</h3>
+			</dd>
+		</dl>
+
+		<!-- 사용하지 않음
+		<div class="summary_page">
+			<ul>
+				<li>관리자정보는 관리자사이트 접속 시 적용됩니다. 보안을 위해 아이디와 패스워드는 자주 바꿔 주시는 게 좋습니다.</li>
+				<li>관리자명에 입력한 이름은 게시판 관리 시에 글쓴이로 등록됩니다.</li>
+				<li>사업자 정보에 입력하신 정보는 기본적으로 쇼핑몰 하단 카피라이트부분에 보여집니다.</li>
+				<li>변동사항이 있을 시에는 반드시 변경해주시기 바랍니다.</li>
+			</ul>
+		</div -->
+		
+<script type="text/javascript">
+//<![CDATA[
+$(function() {
+	$('.ux-dateperioder.sdt button').dateperioder({
+		start: '#sdts',
+		end: '#sdte'
+	});
+});
+//]]>
+</script>
+
+
+		<form id="frm" name="Frm" method="post">
+
+			<!-- 단락 -->
+			<div class="section">
+				<h3 class="title_section">폼_A_입력
+					<input type="checkbox" name="display" class="ux-switcher" />
+				</h3>
+				<div class="tbl_cols">
+					<table>
+						<caption>입력테이블</caption>
+						<colgroup>
+							<col width="170" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="required">입력기본</th>
+								<td>
+									<input type="text" name="ceoname" value="홍길동" class="w250" required="대표자명" />
+									<span class="info">* 영문 또는 숫자 6~20자</span>
+								</td>
+							</tr>
+							<tr>
+								<th>근무시간 및 기타사항</th>
+								<td>
+									<textarea name="etc" cols="4" placeholder="입력해주세요"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<th>입력 변형 A</th>
+								<td>
+									송장정보 입력 후  <input type="text" name="date" placeholder="000" class="w60" /> 일 후에 자동으로 배송완료 처리됩니다.
+									<span class="info">* 공백 또는 0으로 설정 시, 자동 배송완료 처리되지않습니다.</span>
+								</td>
+							</tr>
+							<tr>
+								<th class="required">입력 변형 B</th>
+								<td>
+									<input type="text" name="ceoname" value="" class="w250" required="대표자명" placeholder="입력해주세요" />
+									<label class="inblock mgl5"><input type="checkbox" name="pwc" id="pwc" />비밀번호 변경</label>
+								</td>
+							</tr>
+							<tr>
+								<th class="required">입력 변형 C</th>
+								<td>
+									<input type="text" name="ceoname" value="대표자" class="w250" required="대표자명" placeholder="입력해주세요" />
+									<input type="text" name="ceoname" value="대표이사" class="w250" required="대표자명" placeholder="입력해주세요" />
+									<p class="info">* 등록된 안내문구를 노출합니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th class="required">입력 변형 D</th>
+								<td>
+									<input type="text" name="ceoname" value="" class="w250" required="대표자명" placeholder="입력해주세요" />
+									<a href="#" class="button gray">기본버튼</a>
+									<span class="info">* 영문 또는 숫자 6~20자</span>
+								</td>
+							</tr>
+							<tr>
+								<th>라디오버튼</th>
+								<td>
+									<label><input type="radio" name="radio1" id="radio1_1" checked="checked" />사용함</label>
+									<label class="mgl15"><input type="radio" name="radio1" id="radio1_2" />사용 안함</label>
+									<span class="">?</span>
+								</td>
+							</tr>
+							<tr>
+								<th>체크박스</th>
+								<td>
+									<label><input type="checkbox" name="checkbox1" id="checkbox1_1" checked="checked" />선택함</label>
+									<label class="mgl15"><input type="checkbox" name="checkbox1" id="checkbox1_2" />선택안함</label>
+								</td>
+							</tr>
+							<tr>
+								<th>픽커박스</th>
+								<td>
+									<select name="" class="w160">
+										<option>선택</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>픽커박스_변형_A</th>
+								<td>
+									<select name="" class="w160">
+										<option>선택</option>
+									</select>
+									<input type="text" name="ceoname" value="대표이사" class="w250" required="대표자명" placeholder="입력해주세요" />
+								</td>
+							</tr>
+							<tr>
+								<th>픽커박스_변형_B</th>
+								<td>
+									<select name="" class="w160">
+										<option>선택</option>
+									</select>
+									<select name="" class="w160">
+										<option>선택</option>
+									</select>
+									<select name="" class="w160">
+										<option>선택</option>
+									</select>
+									<a href="#" class="button blue">추가</a>
+								</td>
+							</tr>
+							<tr>
+								<th class="required">회사주소</th>
+								<td>
+									<div class="address">
+										<input type="text" name="ceoname" value="03456" class="w100" />
+										<button type="button" class="button gray">우편번호찾기</button>
+										<div>
+											<input type="text" name="ceoname" value="서울특별시 강남구 논현로75길 15" />
+											<input type="text" name="ceoname" value="수양빌딩 3층 302호" />
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="required">휴대폰번호</th>
+								<td>
+									<div class="phone">
+										<select name="" class="w160">
+											<option>선택</option>
+										</select>
+										-
+										<input type="text" name="ceoname" value="" />
+										-
+										<input type="text" name="ceoname" value="" />
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="required">메일</th>
+								<td>
+									<div class="email">
+										<input type="text" name="ceoname" value="" />
+										@
+										<input type="text" name="ceoname" value="" />
+										<select name="" class="w160">
+											<option>선택</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>토글버튼</th>
+								<td><input type="checkbox" name="display" class="ux-switcher" /></td>
+							</tr>
+							<tr>
+								<th>토글버튼과 입력박스</th>
+								<td>
+									<input type="checkbox" name="display" class="ux-switcher" />
+
+									<div class="mgt5">
+										비밀번호 변경 후
+										<select name="">
+											<option>120</option>
+										</select>
+										일이 지났을 경우 비밀번호 변경 팝업이 노출됩니다.
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>라디오 버튼과 입력박스</th>
+								<td>
+									<ul>
+										<li>
+											<label><input type="radio" name="radio2" id="radio2_1" checked="checked" />미지급</label>
+										</li>
+										<li>
+											<label><input type="radio" name="radio2" id="radio2_2" />지급</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+	
+							<tr>
+								<th>기간</th>
+								<td>
+									<div class="hiddenbox viewterm">
+										<select name="">
+											<option>선택</option>
+										</select>
+	
+										<input type="text" name="sdts" id="sdts" placeholder="0000-00-00" class="ux-datepicker" />
+										~
+										<input type="text" name="sdte" id="sdte" placeholder="0000-00-00" class="ux-datepicker mgl5" />
+										<span class="ux-dateperioder sdt mgl5">
+											<button type="button" class="button gray">전체</button>
+											<button type="button" class="button gray" interval="t0">오늘</button>
+											<button type="button" class="button gray" interval="t1">어제</button>
+											<button type="button" class="button gray" interval="d3">3일간</button>
+											<button type="button" class="button gray" interval="d7">7일간</button>
+											<button type="button" class="button gray" interval="d10">10일간</button>
+											<button type="button" class="button gray" interval="d20">20일간</button>
+											<button type="button" class="button gray" interval="d30">30일간</button>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<!-- <tr>
+								<th>페이스북</th>
+								<td>
+									<label><input type="radio" name="radio1" id="radio1_1" checked="checked" />사용함</label>
+									<label><input type="radio" name="radio1" id="radio1_2" />사용안함</label>
+									<span class="color_g99">(https://developers.facebook.com/apps/ 에서 APP ID를 발급받아 입력해주세요)</span>
+	
+									<div class="label_input mgt10">
+										<label for="app_id">APP ID</label><input type="text" name="appId" id="app_id" placeholder="입력하세요" />
+										<label for="secret_code" class="line">Secret Code</label><input type="text" name="secretCode" id="secret_code" placeholder="입력하세요" />
+									</div>
+								</td>
+							</tr> -->
+							<tr>
+								<th>이미지 등록</th>
+								<td>
+									모듈화 진행 중..
+	
+<!-- 개발 진행 중 대기
+									<span class="regImgbox">
+										<ul>
+											<li class="before" title="이미지 첨부 전"> 
+												<input type="file" name="" id="imgInp" /><label for="imgInp">찾아보기</label>
+											</li>
+											<li class="after" title="이미지 첨부 후">
+												<img src="" alt="" />
+												<div class="btns">
+													<button type="button" class="zoom"><i>확대</i></button>
+													<button type="button" class="edit"><i>수정</i></button>
+													<button type="button" class="delete"><i>삭제</i></button>
+												</div>
+											</li>
+										</ul>
+									</span>
+-->
+	
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div><!-- //section -->
+		</form>
+
+		<!-- 단락 -->
+		<div class="section">
+			<h3 class="title_section">폼_B_출력</h3>
+			<div class="tbl_cols_output">
+				<table>
+					<caption>출력테이블</caption>
+					<colgroup>
+						<col width="50%" />
+						<col width="*" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td>
+								<div class="data">
+									<span class="th">주문금액</span>
+									<strong>56,000원</strong>
+								</div>
+							</td>
+							<td>
+								<div class="data">
+									<span class="th">사용적립금</span>
+									<strong class="color_point">3,000원</strong>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data">
+									<span class="th">배송비</span>
+									<strong>5,500원</strong>
+								</div>
+							</td>
+							<td>
+								<div class="data">
+									<span class="th">이벤트할인</span>
+									<strong class="color_point">0원</strong>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data">
+									<span class="th">상품할인쿠폰</span>
+									<strong class="color_point">8,100원</strong>
+								</div>
+							</td>
+							<td>
+								<div class="data">
+									<span class="th">장바구니할인쿠폰</span>
+									<strong class="color_point">0원</strong>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data">
+									<span class="th">결제금액</span>
+									<strong class="color_red">50,400원</strong>
+								</div>
+							</td>
+							<td>
+								<div class="data">
+									<span class="th">적립예정금액</span>
+									<strong class="color_g99">5,400원</strong>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div class="data">
+									<span class="th">결제수단</span>
+									<strong>가상계좌  /  우리은행 : 000000000  /  예금주 : 김정문  /  입금자 : 박철수</strong>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data">
+									<span class="th">주문자</span>
+									박철수 / test1234
+								</div>
+							</td>
+							<td>
+								<div class="data">
+									<span class="th">신청</span>
+									부운영자 김정식  /  2018-11-11 00:00:00
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="data">
+									<span class="th">완료</span>
+									부운영자 김정식  /  2018-11-11 00:00:00
+								</div>
+							</td>
+							<td>
+								<div class="data">
+									<span class="th">사유</span>
+									사이즈를 잘못 주문했어요.
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!-- //section -->
+
+		<!-- 단락 -->
+		<div class="section">
+			<h3 class="title_section">탭 박스</h3>
+			<div class="tab_box">
+				<ul>
+					<li class="active"><a href="#">PC</a></li>
+					<li><a href="#">Mobile</a></li>
+				</ul>
+			</div>
+		</div><!-- //section -->
+
+		<!-- 단락 
+		<div class="section">
+			<h3 class="title_section">리스트_A_출력</h3>
+			<div class="tbl_rows">
+				<table>
+					<caption>리스트_A</caption>
+					<colgroup>
+						<col width="42" />
+						<col width="50" />
+						<col width="*" />
+						<col width="8%" />
+						<col width="10%" />
+						<col width="8%" />
+						<col width="9%" />
+						<col width="9%" />
+						<col width="70" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">전체선택</label></th>
+							<th>no.</th>
+							<th>아이디</th>
+							<th>이름</th>
+							<th>휴대폰번호</th>
+							<th>선택</th>
+							<th>최근접속일</th>
+							<th>등록일자</th>
+							<th>관리</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">아이디선택</label></td>
+							<td>1</td>
+							<td class="txt_left">admin12345555</td>
+							<td>김영철</td>
+							<td>010-1234-1234</td>
+							<td><input type="radio" name="radio1" id="radio1_1" checked="checked" /><label for="radio1_1" class="mar_none">선택</label></td>
+							<td>2019-06-08<br />09:00:00.00</td>
+							<td>2019-05-15</td>
+							<td><button type="button" class="button gray">수정</button></td>
+						</tr>
+						<tr>
+							<td colspan="9" class="data_none">내역이 존재하지 않습니다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> //section -->
+
+		<!-- 단락
+		<div class="section">
+			<h3 class="title_section">리스트_A_상품</h3>
+			<div class="tbl_rows">
+				<table>
+					<caption>리스트_A</caption>
+					<colgroup>
+						<col width="42" />
+						<col width="110" />
+						<col width="90" />
+						<col width="116" />
+						<col width="71" />
+						<col width="*" />
+						<col width="88" />
+						<col width="90" />
+						<col width="65" />
+						<col width="108" />
+						<col width="70" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">전체선택</label></th>
+							<th>판매자</th>
+							<th>상품코드</th>
+							<th>브랜드</th>
+							<th>이미지</th>
+							<th>상품명<br />카테고리</th>
+							<th>공급가<br />판매가</th>
+							<th>진열상태</th>
+							<th>재고</th>
+							<th>등록일<br />최종수정일</th>
+							<th>선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">해당상품선택</label></td>
+							<td>판매자 명 노출</td>
+							<td>000000</td>
+							<td>바이더앱리테일</td>
+							<td>
+								<div class="thumb_box product"><img src="" alt="" /></div>
+							</td>
+							<td class="txt_left">
+								<a href="#" class="productname">상품명 노출 필요</a><br />
+								<span class="color_g99">대분류명 > 중분류명 > 소분류명</span>
+							</td>
+							<td>
+								<span class="color_g99">10,000원</span><br />
+								15,000원
+							</td>
+							<td>
+								<span class="color_red">미진열</span>
+							</td>
+							<td>99</td>
+							<td>2018-01-01<br />2018-02-59</td>
+							<td><button type="button" class="button">선택</button></td>
+						</tr>
+						<tr class="forbid">
+							<td><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">해당상품선택</label></td>
+							<td>판매자 명 노출</td>
+							<td>000000</td>
+							<td>바이더앱리테일</td>
+							<td>
+								<div class="thumb_box product"><img src="" alt="" /></div>
+							</td>
+							<td class="txt_left">
+								<a href="#" class="productname">상품명 노출 필요</a><br />
+								<span class="color_g99">대분류명 > 중분류명 > 소분류명</span>
+							</td>
+							<td>
+								<span class="color_g99">10,000원</span><br />
+								15,000원
+							</td>
+							<td>
+								<span>진열</span>
+							</td>
+							<td>
+								<span class="color_g99">품절</span>
+							</td>
+							<td>2018-01-01<br />2018-02-59</td>
+							<td><button type="button" class="button">선택</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">해당상품선택</label></td>
+							<td>판매자 명 노출</td>
+							<td>000000</td>
+							<td>바이더앱리테일</td>
+							<td>
+								<div class="thumb_box product"><img src="" alt="" /></div>
+							</td>
+							<td class="left">
+								<a href="#" class="font14" target="_blank">상품명 노출 필요</a><br />
+								<span class="color_g99">대분류명 > 중분류명 > 소분류명</span>
+							</td>
+							<td>
+								<span class="color_g99">10,000원</span><br />
+								15,000원
+							</td>
+							<td>
+								<span>진열</span>
+							</td>
+							<td>무제한</td>
+							<td>2018-01-01<br />2018-02-59</td>
+							<td><button type="button" class="button">선택</button></td>
+						</tr>
+						<tr>
+							<td colspan="11" class="data_none">상품이 존재하지 않습니다.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="batch_box">
+				<ul>
+					<li>일괄처리 : 선택한 주문정보를 <a href="#" class="button">엑셀로받기</a></li>
+					<li>검색된 모든 주문정보를 <a href="#" class="button">엑셀로받기</a></li>
+				</ul>
+			</div>
+		</div> //section -->
+
+		<!-- 단락
+		<div class="section">
+			<h3 class="title_section">리스트_B_입력</h3>
+			<div class="tbl_rows">
+				<table>
+					<caption>리스트_B</caption>
+					<colgroup>
+						<col width="42" />
+						<col width="50" />
+						<col width="20%" />
+						<col width="*" />
+						<col width="30%" />
+						<col width="15%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">전체선택</label></th>
+							<th>no.</th>
+							<th>항목</th>
+							<th>내용</th>
+							<th>구분명</th>
+							<th>선택</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="" id="" class="mar_none" /><label for="" class="blind">행선택</label></td>
+							<td>1</td>
+							<td class="txt_left">admin12345555</td>
+							<td><input type="text" value="내용" style="width:100%;"  /></td>
+							<td class="left">
+								<select name="">
+									<option>선택</option>
+								</select>
+								<input type="text" value="내용" />
+							</td>
+							<td>
+								<input type="radio" name="radio1" id="radio1_1" checked="checked" /><label for="radio1_1">선택</label>
+								<input type="radio" name="radio1" id="radio1_2" /><label for="radio1_2" class="mar_none">비선택</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><//section -->
+
+		<!-- 단락
+		<div class="section">
+			<h3 class="title_section">리스트_B_배너</h3>
+			<div class="tbl_rows">
+				<table>
+					<caption>리스트_B_배너</caption>
+					<colgroup>
+						<col width="320" />
+						<col width="*" />
+						<col width="180" />
+						<col width="170" />
+						<col width="50" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th>예제 이미지</th>
+							<th>영역명(노출타이틀)</th>
+							<th>노출상태</th>
+							<th>관리</th>
+							<th>이동</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div class="thumb_box banner"><img src="" alt="" /></div>
+							</td>
+							<td class="txt_left">
+								<button type="button" class="button gray">수정</button>
+								<span class="font14 mgl5">영역명이 노출</span>
+							</td>
+							<td>
+								<input type="radio" name="radio1" id="radio1_1" checked="checked" /><label for="radio1_1">노출</label>
+								<input type="radio" name="radio1" id="radio1_2" /><label for="radio1_2" class="mar_none">숨김</label>
+							</td>
+							<td>
+								<button type="button" class="button">배너관리</button>
+							</td>
+							<td>
+								<a href="#" class="icon_button move"><i class="up">상</i><i class="down">하</i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div> //section -->
+
+<script type="text/javascript">
+//<![CDATA[
+$(function() {
+	$('.sortable_banner ul').sortable({
+		handle: '.mover',
+		opacity: 0.7,
+		start: function(e, ui) {
+			console.log(ui.item)
+		},
+		stop: function(e, ui) {
+			console.log(ui.item)
+		}		
+	}).disableSelection();
+});
+//]]>
+</script>
+
+		<!-- 단락
+		<div class="section">
+			<h3 class="title_section">배너관리 (최대 N개)</h3>
+			<div class="section_control">
+				<input type="checkbox" name="" id="" /><label for="">전체선택</label>
+				<button type="button" class="button">선택삭제</button>
+				<button type="button" class="button">추가</button>
+				<button type="button" class="button black">저장</button>
+			</div>
+			<div class="sortable sortable_banner">
+				<ul>
+					<li>
+						<div class="set">
+							<label class="check"><input type="checkbox" name="" id="" />선택</label>
+							<a href="#" class="button gray">수정</a>
+							<a href="#" class="button gray mover">이동</a>
+						</div>
+						<div class="imgs">
+							<div class="thumb_box adbanner"><img src="" alt="" /></div>
+							<div class="blackout end"><strong class="text">기간종료</strong></div>
+							<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+						</div>
+						<div class="name ellipsis">관리자에 등록된 배너명 노출 배너명은 한줄처리 됩니다.</div>
+					</li>
+					<li>
+						<div class="set">
+							<label class="check"><input type="checkbox" name="" id="" />선택</label>
+							<a href="#" class="button gray">수정</a>
+							<a href="#" class="button gray mover">이동</a>
+						</div>
+						<div class="imgs">
+							<div class="thumb_box adbanner"><img src="" alt="" /></div>
+							<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+						</div>
+						<div class="name ellipsis">관리자에 등록된 배너명 노출</div>
+					</li>
+					<li>
+						<div class="set">
+							<label class="check"><input type="checkbox" name="" id="" />선택</label>
+							<a href="#" class="button gray">수정</a>
+							<a href="#" class="button gray mover">이동</a>
+						</div>
+						<div class="imgs">
+							<div class="thumb_box adbanner"><img src="" alt="" /></div>
+							<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+						</div>
+						<div class="name ellipsis">관리자에 등록된 배너명 노출</div>
+					</li>
+					<li>
+						<div class="set">
+							<label class="check"><input type="checkbox" name="" id="" />선택</label>
+							<a href="#" class="button gray">수정</a>
+							<a href="#" class="button gray mover">이동</a>
+						</div>
+						<div class="imgs">
+							<div class="thumb_box adbanner"><img src="" alt="" /></div>
+							<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+						</div>
+						<div class="name ellipsis">관리자에 등록된 배너명 노출</div>
+					</li>
+					<li>
+						<div class="set">
+							<label class="check"><input type="checkbox" name="" id="" />선택</label>
+							<a href="#" class="button gray">수정</a>
+							<a href="#" class="button gray mover">이동</a>
+						</div>
+						<div class="imgs">
+							<div class="thumb_box adbanner"><img src="" alt="" /></div>
+							<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+						</div>
+						<div class="name ellipsis">관리자에 등록된 배너명 노출</div>
+					</li>
+					<li>
+						<div class="set">
+							<label class="check"><input type="checkbox" name="" id="" />선택</label>
+							<a href="#" class="button gray">수정</a>
+							<a href="#" class="button gray mover">이동</a>
+						</div>
+						<div class="imgs">
+							<div class="thumb_box adbanner"><img src="" alt="" /></div>
+							<a href="#" class="icon_button zoom"><i>확대보기</i></a>
+						</div>
+						<div class="name ellipsis">관리자에 등록된 배너명 노출</div>
+					</li>
+				</ul>
+			</div>
+		</div> //section -->
+
+	</div><!-- //contents -->
+</div><!-- //container -->
+
+<footer id="footer_guide">
+	Copyright ⓒ BUYTHEAPP. All rights reserved.
+</footer>
+
+</body>
+</html>
